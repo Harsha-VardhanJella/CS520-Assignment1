@@ -1,0 +1,11 @@
+My Github File structure for Clarity:
+
+ProblemX/
+│
+├── Codes/                # Contains all generated code files from different prompt strategies
+├── Tests/                # Stores corresponding test case files used for evaluation(This is 
+                                      optional as other problems have test cases defined in problem.txt and eval.py)                                                                                                                                                   
+├── Prompt_CoT.txt        # Chain-of-Thought prompts used for that problem
+├── Prompt_SelfDebug.txt  # Self-Debugging prompts used for that problem
+├── evalX.py              # Python evaluation script to run the generated code and compute results
+└── problem.txt           # Problem statement and test cases  from HumanEval dataset.
