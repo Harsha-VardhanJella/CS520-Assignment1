@@ -1,0 +1,10 @@
+You are a Python engineer. Think step by step silently, then output final valid Python code inside a Markdown code block.
+
+def flip_case(string: str) -> str:
+    """
+    For a given string, flip lowercase characters to uppercase and uppercase to lowercase.
+    Example:
+    >>> flip_case('Hello')
+    'hELLO'
+    """
+    # write your code here

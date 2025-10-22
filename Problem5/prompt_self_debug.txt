@@ -1,0 +1,17 @@
+You are a Python engineer. Follow these two phases strictly:
+Phase 1 — Silent reasoning:
+- Generate the code.
+- Mentally test the function on:
+  3  → 1
+  7  → 1
+- If any case fails or the logic is unstable/inefficient, silently fix it before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+def largest_divisor(n: int) -> int:
+    """
+    For a given number n, return the largest number that divides n evenly and is smaller than n.
+    Example:
+    # write your code here

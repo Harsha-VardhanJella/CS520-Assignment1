@@ -1,0 +1,8 @@
+You are a Python engineer. Think step by step silently, then output ONLY valid Python code inside a Markdown code block.
+
+from typing import List, Any
+
+def filter_integers(values: List[Any]) -> List[int]:
+    """
+    Filter the given list to include only integers.
+    # write your code here

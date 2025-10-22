@@ -1,0 +1,25 @@
+You are a Python engineer. Follow these two phases strictly:
+
+Phase 1 — Silent reasoning:
+- Generate the code.
+- Mentally test the function on:
+  [] → []
+  [1, 2, 3, 4] → [1, 2, 3, 4]
+  [1, 2, 3, 2, 4, 3, 5] → [1, 4, 5]
+- If any case fails or the logic is unstable/inefficient, silently fix it before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+from typing import List
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """
+    From a list of integers, remove all elements that occur more than once.
+    Keep the order of the remaining elements the same as in the input.
+    Example:
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+    # write your code here

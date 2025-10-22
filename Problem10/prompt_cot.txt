@@ -1,0 +1,7 @@
+You are a Python engineer. Think step by step silently, then output ONLY valid Python code inside a Markdown code block.
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """
+    Input is a string containing multiple groups of nested parentheses.return the list of individual string groups.
+    """
+    # write your code here

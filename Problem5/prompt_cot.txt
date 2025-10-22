@@ -1,0 +1,6 @@
+You are a Python engineer. Think step by step silently,  then output ONLY valid Python code inside a Markdown code block.
+def largest_divisor(n: int) -> int:
+    """
+    For a given number n, return the largest number that divides n evenly and is smaller than n.
+    """
+    # write your code here

@@ -1,0 +1,7 @@
+from typing import List, Any
+
+def filter_integers(values: List[Any]) -> List[int]:
+    """
+    Filter the given list to include only integers.
+    """
+    return [v for v in values if isinstance(v, int)]

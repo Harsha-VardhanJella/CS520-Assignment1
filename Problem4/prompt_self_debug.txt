@@ -1,0 +1,19 @@
+You are a Python engineer. Follow these two phases strictly:
+
+Phase 1 — Silent reasoning:
+- Generate the code.
+- Mentally test the function on:
+  '' → 0
+  'abc' → 3
+  'asdasnakj' → 9
+- If you detect any incorrect behavior or failure to produce these results, silently fix your logic before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+def strlen(string: str) -> int:
+    """
+    Return the length of the given string.
+    """
+    # write your code here

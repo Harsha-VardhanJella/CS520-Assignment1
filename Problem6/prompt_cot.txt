@@ -1,0 +1,9 @@
+You are a Python engineer. Think step by step silently, then output ONLY valid Python code inside a Markdown code block.
+
+
+def factorize(n: int) -> List[int]:
+    """
+    Return the list of prime factors of n from smallest to largest.
+    Each prime appears as many times as in the factorization.
+"""
+    # write your code here

@@ -1,0 +1,9 @@
+You are a Python engineer. Think step by step silently, then output ONLY valid Python code inside a Markdown code block.
+
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """
+    Check if in the given list of numbers, any two numbers are closer to each other than the given threshold.
+    """
+    # write your code here

@@ -1,0 +1,39 @@
+
+You are a Python engineer. then output ONLY valid Python code inside a Markdown code block.
+Before you output the code, mentally test your implementation on:
+[1.0, 2.0, 3.0, 4.0, 5.0, 2.2]  →  (2.0, 2.2)
+[1.0, 2.0, 3.0, 4.0, 5.0, 2.0]  →  (2.0, 2.0)
+If it fails to produce correct results or shows instability, silently fix the logic before producing the final code.
+
+from typing import List, Tuple
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    """
+    From a supplied list of numbers (length >= 2), select and return two that are the closest to each other.
+    Return them as a tuple in order (smaller number, larger number).
+    """
+    # write your code here
+
+Version 1:
+
+You are a Python engineer. Follow these two phases strictly:
+
+Phase 1 — Silent reasoning:
+- Generate the code 
+- Mentally test the function on:
+  [1.0, 2.0, 3.0, 4.0, 5.0, 2.2] → (2.0, 2.2)
+  [1.0, 2.0, 3.0, 4.0, 5.0, 2.0] → (2.0, 2.0)
+- If you detect an error, instability, or failure to return correct outputs, silently fix your logic before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+from typing import List, Tuple
+
+def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:
+    """
+    From a supplied list of numbers (length >= 2), select and return two that are the closest to each other.
+    Return them as a tuple in order (smaller number, larger number).
+    """
+    # write your code here

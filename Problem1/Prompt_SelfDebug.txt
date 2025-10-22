@@ -1,0 +1,61 @@
+Version 0 : (Self debug)
+
+You are a Python engineer. then output only valid Python code .
+
+
+You are a Python engineer who follows below mentioned rules at any cost and implement the function.
+
+Rules:
+    Output only valid Python code inside a Markdown code block.
+    You may use the helper function poly(xs, x) shown below to evaluate the polynomial.
+    Before you output the code, mentally test your solution on [1, 2] and [-6, 11, -6, 1]. 
+If you detect non-convergence, incorrect sign checks, or unstable behavior, silently correct the code and only then output the final version. 
+
+Implement the following:
+
+import math
+
+def poly(xs: list, x: float):
+    """
+    Evaluates polynomial with coefficients xs at point x.
+    Example: if xs = [a0, a1, a2], returns a0 + a1*x + a2*x**2
+    """
+    return sum(coeff * math.pow(x, i) for i, coeff in enumerate(xs))
+
+def find_zero(xs: list):
+    """
+    Return one real x such that poly(xs, x) ≈ 0.
+    Use a robust numerical method: bracket a sign change by expanding an initial interval,
+    then apply bisection until the interval is sufficiently small.
+    """
+Version 1 : (Updated)
+
+You are a Python engineer. Think step by step silently, test your reasoning, then output ONLY valid and properly formatted Python code.
+Your code must contain exactly two functions in this order: poly, then find_zero.
+
+Implement find_zero(xs: list) to return one real root of the polynomial defined by xs.
+Use the helper poly(xs, x) below to evaluate the polynomial.
+
+Before you output the code, mentally test your implementation on [1, 2] and [-6, 11, -6, 1].
+If it fails to converge or gives wrong results, silently fix it and only then output the corrected version.
+
+import math
+
+def poly(xs: list, x: float):
+    """
+    Evaluates polynomial with coefficients xs at point x.
+    Example: if xs = [a0, a1, a2], returns a0 + a1*x + a2*x**2
+    """
+    return sum(coeff * math.pow(x, i) for i, coeff in enumerate(xs))
+
+def find_zero(xs: list):
+    """
+    Return one real x such that poly(xs, x) ≈ 0.
+    Hints (keep implementation concise):
+    - Start from a small symmetric interval and check endpoints.
+    - If no sign change, expand the interval in a balanced way (avoid collapsing a==b).
+    - Include a reasonable iteration cap to avoid infinite loops and handle non-finite values.
+    - Once a sign change is bracketed, refine with a simple, reliable method until the interval is small.
+    """
+
+

@@ -1,0 +1,18 @@
+You are a Python engineer. Follow these two phases strictly:
+
+Phase 1 — Silent reasoning:
+- Generate the code.
+- Mentally test the function on:
+  '' → ''
+  'Hello!' → 'hELLO!'
+- If any case fails or the logic is unstable/inefficient, silently fix it before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+def flip_case(string: str) -> str:
+    """
+    For a given string, flip lowercase characters to uppercase and uppercase to lowercase.
+
+    # write your code here

@@ -1,0 +1,10 @@
+You are a Python engineer. Think step by step silently, then output ONLY valid Python code inside a Markdown code block.
+
+from typing import List
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """
+    From a list of integers, remove all elements that occur more than once.
+    Keep the order of the remaining elements the same as in the input.
+    """
+    # write your code here

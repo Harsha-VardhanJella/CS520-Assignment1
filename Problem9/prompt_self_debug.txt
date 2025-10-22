@@ -1,0 +1,20 @@
+You are a Python engineer. Follow these two phases strictly:
+
+Phase 1 — Silent reasoning:
+- Generate the code.
+- Mentally test the function on:
+  [1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3 → True
+  [1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05 → False
+- If any test fails or logic is unstable/inefficient, silently fix it before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """
+    Check if in the given list of numbers, any two numbers are closer to each other than the given threshold.
+    """
+    # write your code here

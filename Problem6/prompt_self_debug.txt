@@ -1,0 +1,22 @@
+You are a Python engineer. Follow these two phases strictly:
+
+Phase 1 — Silent reasoning:
+- Generate the code.
+- Mentally test the function on:
+  2 → [2]
+  4 → [2, 2]
+  8 → [2, 2, 2]
+- If any case fails or the logic is unstable/inefficient, silently fix it before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+from typing import List
+
+def factorize(n: int) -> List[int]:
+    """
+    Return the list of prime factors of n from smallest to largest.
+    Each prime appears as many times as in the factorization.
+    """
+    # write your code here

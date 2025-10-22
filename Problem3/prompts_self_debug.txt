@@ -1,0 +1,20 @@
+You are a Python engineer. Follow these two phases strictly:
+
+Phase 1 — Silent reasoning:
+- Generate the code.
+- Mentally test the function on:
+  ['a', 3.14, 5] → [5]
+  [1, 2, 3, 'abc', {}, []] → [1, 2, 3]
+- If you detect any incorrect behavior or failure to produce these results, silently fix your logic before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+from typing import List, Any
+
+def filter_integers(values: List[Any]) -> List[int]:
+    """
+    Filter the given list to include only integers.
+    """
+    # write your code here

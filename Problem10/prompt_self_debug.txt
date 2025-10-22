@@ -1,0 +1,21 @@
+You are a Python engineer. Follow these two phases strictly:
+
+Phase 1 — Silent reasoning:
+- Generate the code.
+- Mentally test the function on:
+  '(()()) ((())) () ((())()())' → ['(()())', '((()))', '()', '((())()())']
+- If any case fails or the logic mishandles spaces or balancing, silently fix it before proceeding.
+
+Phase 2 — Output:
+- Output ONLY the final valid Python code inside a Markdown code block.
+- Do not include any reasoning, comments, or explanations.
+
+from typing import List
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """
+    Input is a string containing multiple groups of nested parentheses. Separate those groups
+    into individual strings and return the list of groups. Separate groups are balanced and
+    not nested within each other. Ignore any spaces in the input string.
+    """
+    # write your code here
