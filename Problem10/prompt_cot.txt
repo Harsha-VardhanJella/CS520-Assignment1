@@ -5,3 +5,17 @@ def separate_paren_groups(paren_string: str) -> List[str]:
     Input is a string containing multiple groups of nested parentheses.return the list of individual string groups.
     """
     # write your code here
+
+#Updated Prompt:
+
+You are a Python engineer. Think step by step silently, then output ONLY valid Python code inside a Markdown code block.
+
+from typing import List
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """
+    Input is a string containing multiple groups of nested parentheses. Separate those groups
+    into individual strings and return the list of groups. Separate groups are balanced and
+    not nested within each other. Ignore any spaces in the input string.
+    """
+    # write your code here
