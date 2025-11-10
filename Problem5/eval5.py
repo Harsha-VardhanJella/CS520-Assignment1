@@ -15,6 +15,13 @@ def run_tests(mod):
         (10, 5),
         (100, 50),
         (49, 7),
+        (1, 0),
+        (2, 1),
+        (3, 1),
+        (10, 5),
+        (17, 1),
+        (20, 10),
+        (100, 50),
     ]
     passed = 0
     for n, expected in tests:
@@ -27,6 +34,7 @@ def run_tests(mod):
         except Exception as e:
             print(f" n={n} -> raised {e.__class__.__name__}: {e}")
     print(f"\n✅ Passed {passed}/{len(tests)} tests")
+    return passed
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
