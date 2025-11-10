@@ -29,6 +29,7 @@ def run_tests(candidate):
             print(f" Input {inp} → raised {e}")
 
     print(f"\n Passed {passed}/{len(tests)} tests")
+    return passed
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

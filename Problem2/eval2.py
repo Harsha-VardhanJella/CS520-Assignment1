@@ -1,16 +1,16 @@
+# Problem2/eval2.py
 import importlib.util
 import sys
 from pathlib import Path
 
 def load_module(path):
-    """Dynamically import a .py file"""
     spec = importlib.util.spec_from_file_location("candidate", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
-def run_tests(candidate):
-    """Run the HumanEval/20 tests"""
+def run_tests(candidate) -> int:
+    """Run the HumanEval/20 tests and return the number passed."""
     tests = [
         ([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], (3.9, 4.0)),
         ([1.0, 2.0, 5.9, 4.0, 5.0], (5.0, 5.9)),
@@ -29,13 +29,14 @@ def run_tests(candidate):
                 print(f" Input {nums} → got {result}, expected {expected}")
         except Exception as e:
             print(f"Input {nums} → raised {e}")
+
     print(f"\n✅ Passed {passed}/{len(tests)} tests")
+    return passed  # <-- IMPORTANT: return the count
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python evaluate_find_closest.py <candidate_path>")
         sys.exit(1)
-
     path = Path(sys.argv[1])
     mod = load_module(path)
     run_tests(mod)

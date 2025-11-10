@@ -18,6 +18,12 @@ def run_tests(mod):
         (3 * 19 * 3 * 19 * 3 * 19, [3, 3, 3, 19, 19, 19]),
         (3 * 19 * 19 * 19, [3, 19, 19, 19]),
         (3 * 2 * 3, [2, 3, 3]),
+        (6, [2, 3]),
+        (9, [3, 3]),
+        (15, [3, 5]),
+        (49, [7, 7]),
+        (97, [97]),
+        (100, [2, 2, 5, 5])
     ]
 
     passed = 0
@@ -31,6 +37,7 @@ def run_tests(mod):
         except Exception as e:
             print(f" n={n} -> raised {e.__class__.__name__}: {e}")
     print(f"\n Passed {passed}/{len(tests)} tests")
+    return passed
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

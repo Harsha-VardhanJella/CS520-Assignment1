@@ -25,6 +25,7 @@ def run_tests(mod):
         except Exception as e:
             print(f" input={inp!r} -> raised {e.__class__.__name__}: {e}")
     print(f"\n Passed {passed}/{len(tests)} tests")
+    return passed
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

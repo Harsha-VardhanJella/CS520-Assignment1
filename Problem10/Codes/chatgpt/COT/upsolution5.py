@@ -9,6 +9,7 @@ def separate_paren_groups(paren_string: str) -> List[str]:
 
     for idx, char in enumerate(paren_string):
         if char == '(':
+            print("test1")
             if balance == 0:
                 start_idx = idx
             balance += 1

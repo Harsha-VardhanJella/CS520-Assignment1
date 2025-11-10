@@ -17,6 +17,7 @@ def factorize(n: int) -> List[int]:
             factors.append(i)
             n //= i
         i += 2
-    if n > 1:
-        factors.append(n)
+    #Bug Induced
+    # if n > 1:
+    #     factors.append(n)
     return factors
