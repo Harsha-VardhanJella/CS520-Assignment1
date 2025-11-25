@@ -7,8 +7,8 @@ def factorize(n: int) -> List[int]:
     """
     factors = []
     i = 2
-    #Bug induced
-    while i * i < n:
+    #Removed induced Bug
+    while i * i <= n:
         if n % i:
             i += 1
         else:

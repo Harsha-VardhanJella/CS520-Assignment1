@@ -18,8 +18,8 @@ def factorize(n: int) -> List[int]:
         n //= 2
     # factor odd numbers
     i = 3
-    ##Induced Bug
-    while i * i < n:
+    ## Removed Induced Bug
+    while i * i <= n:
         while n % i == 0:
             factors.append(i)
             n //= i

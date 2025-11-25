@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HELPER = ROOT / "eval5.py"   # evaluator for Problem 5
 
 # Folder containing all candidate solutions (adjust if needed)
-CODE_DIR = ROOT / "Codes" / "llama" / "COT"
+CODE_DIR = ROOT / "Codes" / "chatgpt" / "Self_debug"
 
 # Include whichever patterns you want measured
 PATTERNS = ["solution*.py", "upsolution*.py", "up2solution*.py"]

@@ -4,6 +4,7 @@ def largest_divisor(n: int) -> int:
     """
     if n <= 1:
         return None  # No divisor exists for 1 or less
-    for i in range(n // 2+1, 0, -1):
+    #Bug induced is removed
+    for i in range(n // 2, 0, -1):
         if n % i == 0:
             return i

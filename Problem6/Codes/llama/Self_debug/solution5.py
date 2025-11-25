@@ -10,7 +10,7 @@ def factorize(n: int) -> List[int]:
             n //= i
             factors.append(i)
     print(n)
-    # if n > 1:
-    #     print("n",n)
-    #     factors.append(n)
+    if n > 1:
+        #print("n",n)
+        factors.append(n)
     return factors
